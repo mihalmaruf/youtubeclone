@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { CategoryPills } from '../components/CategoryPills'
 import { categories, videos } from '../data/home'
 import { VideoGridItem } from '../components/VideoGridItem'
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { ChevronRight } from "lucide-react"
 
 const Home = () => {
   const [selectedCategory, setSelectedCategory] = useState(categories[0])

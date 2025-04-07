@@ -1,10 +1,11 @@
 "use client"
-import { ArrowLeft, Bell, CirclePlus, Menu, Mic, Search, Settings, Upload, User } from "lucide-react"
+import { ArrowLeft, Bell, CirclePlus, Menu, Mic, Search, Settings, User } from "lucide-react"
 import logo from "../../../public/logo.png"
 import { Button } from "../components/Button"
 import { useState } from "react"
 import { useSidebarContext } from "../contexts/SidebarContext"
 import Image from "next/image"
+import Link from "next/link"
 
 export function PageHeader() {
   const [showFullWidthSearch, setShowFullWidthSearch] = useState(false)
@@ -91,9 +92,9 @@ export function PageHeaderFirstSection({
       <Button onClick={toggle} variant="ghost" size="icon">
         <Menu />
       </Button>
-      <a href="/">
+      <Link href="/">
       <Image src={logo} alt="Logo" width={100} height={24} />
-      </a>
+      </Link>
     </div>
   )
 }
